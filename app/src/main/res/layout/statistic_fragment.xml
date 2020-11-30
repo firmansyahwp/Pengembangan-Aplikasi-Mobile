@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.statistic.StatisticFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_chart_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_plain_data">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_plain_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_pdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasien Dalam Pengawasan" />
+
+            <TextView
+                android:id="@+id/sep1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_pdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/text_odp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_pdp"
+                android:text="Orang Dalam Pengawasan" />
+
+            <TextView
+                android:id="@+id/sep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sep1"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_odp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_jml_pdp"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/text_otg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_odp"
+                android:text="Orang Tanpa Gejala" />
+
+            <TextView
+                android:id="@+id/sep3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sep2"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_otg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_jml_odp"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/text_sembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_otg"
+                android:text="Sembuh" />
+
+            <TextView
+                android:id="@+id/sep4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sep3"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_sembuh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_jml_otg"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/text_negatif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sembuh"
+                android:text="Negatif" />
+
+            <TextView
+                android:id="@+id/sep5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sep4"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_negatif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_jml_sembuh"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/text_positif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_negatif"
+                android:text="Positif" />
+
+            <TextView
+                android:id="@+id/sep6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sep5"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_positif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_jml_negatif"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+            <TextView
+                android:id="@+id/text_meninggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_positif"
+                android:text="Meninggal" />
+
+            <TextView
+                android:id="@+id/sep7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sep6"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toEndOf="@id/text_pdp"
+                android:text="@string/sep" />
+
+            <TextView
+                android:id="@+id/text_jml_meninggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_jml_positif"
+                android:layout_toEndOf="@id/sep1"
+                android:text="@string/default_value" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "177527183588",
+    "firebase_url": "https://healthylife-597a3.firebaseio.com",
+    "project_id": "healthylife-597a3",
+    "storage_bucket": "healthylife-597a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177527183588:android:c9cc81565af2894711f4f1",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177527183588-1jeucv3s9dem1thfjbcmvrp3jnvshp8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTcoEmYJZPk487NpylZVEIbR0gIcHQiu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177527183588-1jeucv3s9dem1thfjbcmvrp3jnvshp8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177527183588:android:7ab5de4639b1b67211f4f1",
+        "android_client_info": {
+          "package_name": "com.nocturnal.healtylife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177527183588-1jeucv3s9dem1thfjbcmvrp3jnvshp8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTcoEmYJZPk487NpylZVEIbR0gIcHQiu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177527183588-1jeucv3s9dem1thfjbcmvrp3jnvshp8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
